@@ -147,20 +147,10 @@ header {
 /* SLider Css */
 .slider {
     width: 100%;
-    height: 100vh;
+    height: 610px;
     /* Adjust as needed */
     overflow: hidden;
     position: relative;
-}
-
-.slide {
-    width: 100%;
-    height: 610px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    transition: opacity 0.5s ease;
 }
 
 .content button:hover {
@@ -171,6 +161,13 @@ header {
     background-image: url('/images/slide1.png');
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 610px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: opacity 0.5s ease;
 }
 
 .slide1 .content h1 {
@@ -199,6 +196,13 @@ header {
     background-image: url('/images/slide2.png');
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
+    height: 610px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    transition: opacity 0.5s ease;
 }
 
 .slide2 .content {
@@ -258,7 +262,7 @@ header {
 .slide3 .content h1 {
     color: #000;
     font-size: 100px;
-    line-height: 90px;
+    line-height: 108px;
     text-transform: capitalize;
     text-align: left;
 }
@@ -303,4 +307,85 @@ header {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+/* Bottel Sec */
+
+.bottel-sec-outer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #EA3F37;
+    padding: 80px 100px 0 100px;
+    height: 720px;
+}
+
+.column {
+    width: calc(33.33% - 10px);
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.bottel-sec-outer .column h3 {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 500 !important;
+    font-family: 'Roobert-Medium';
+}
+
+.img-sec {
+    position: relative;
+    top: -125px;
+}
+
+.column img {
+    display: block;
+    width: 254px;
+    height: 728px;
+    margin-bottom: 20px;
+
+}
+
+.card-outer {
+    margin-top: 50px;
+}
+
+.better-sec {
+    margin-top: 98px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.image {
+    flex: 0 0 auto;
+}
+
+.image img {
+    display: block;
+    width: 48px;
+    height: 48px;
+}
+
+.text {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.text h2 {
+    font-size: 19px;
+    line-height: 22px;
+    margin-bottom: 7px;
+    font-weight: 700;
+}
+
+.text p {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    width: 70%;
 }

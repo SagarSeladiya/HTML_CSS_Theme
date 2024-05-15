@@ -210,7 +210,6 @@ header {
     bottom: 68px;
 }
 
-
 .slide2 .content h1 {
     color: #000;
     font-size: 100px;
@@ -319,6 +318,11 @@ header {
     height: 720px;
 }
 
+.column-main-outer {
+    display: flex;
+    justify-content: space-between;
+}
+
 .column {
     width: calc(33.33% - 10px);
     padding: 0 5px;
@@ -334,7 +338,9 @@ header {
 
 .img-sec {
     position: relative;
-    top: -125px;
+    top: -110px;
+    justify-content: center;
+    display: flex;
 }
 
 .column img {

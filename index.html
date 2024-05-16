@@ -3,12 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shopify</title>
+        <title>Shopify Practical</title>
         <link rel="stylesheet" href="/css/style.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     <body>
         <header>
             <div class="menu-outer">
+                <button class="menu-bar" onclick="menuBar()"><i
+                        class="fa fa-bars"></i> </button>
                 <div>
                     <img src="/images/logo.png" alt="Logo" class="logo">
                 </div>
@@ -18,6 +22,16 @@
                     <li><a href="#">nutrition + benefits</a></li>
                     <li><a href="#">Our story</a></li>
                 </ul>
+
+                <div id="menuSideBar" class="menuSideSec">
+                    <a href="javascript:void(0)" class="closebtn"
+                        onclick="menuBarClose()">×</a>
+                    <a href="#">how it works</a>
+                    <a href="#">nutrition + benefits</a>
+                    <a href="#">Our story</a>
+                    <a href="#">Shop VK9</a>
+                </div>
+
             </div>
 
             <div class="user-info">
@@ -30,7 +44,6 @@
         </header>
 
         <main>
-
             <div class="slider">
                 <div class="slide slide1">
                     <div class="content">
@@ -56,7 +69,6 @@
                         <button>Shop VK9</button>
                     </div>
                 </div>
-
             </div>
 
             <div class="bottel-sec-outer">
@@ -74,7 +86,6 @@
                                     <h2>Healthier skin</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit.</p>
-
                                 </div>
                             </div>
 
@@ -87,7 +98,6 @@
                                     <h2>Antioxidants</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit.</p>
-
                                 </div>
                             </div>
 
@@ -100,7 +110,6 @@
                                     <h2>Better metabolic function</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit.</p>
-
                                 </div>
                             </div>
                         </div>
@@ -120,7 +129,6 @@
                                     <h2>Healthier skin</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit.</p>
-
                                 </div>
                             </div>
 
@@ -133,7 +141,6 @@
                                     <h2>Antioxidants</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit.</p>
-
                                 </div>
                             </div>
 
@@ -146,7 +153,6 @@
                                     <h2>Better metabolic function</h2>
                                     <p>Lorem ipsum dolor sit amet, consectetur
                                         adipiscing elit.</p>
-
                                 </div>
                             </div>
                         </div>
@@ -172,7 +178,6 @@
                     </div>
 
                     <div class="plans">
-
                         <div class="plan">
                             <img src="/images/topchoice-img.png"
                                 alt="VK9 Bottle" class="topchoice-img">
@@ -321,6 +326,15 @@
             </div>
 
             <script src="/js/slider-script.js"></script>
+            <script>
+                function menuBar() {
+                document.getElementById("menuSideBar").style.width = "250px";
+                }
+
+                function menuBarClose() {
+                document.getElementById("menuSideBar").style.width = "0";
+                }
+            </script>
         </main>
 
         <footer>

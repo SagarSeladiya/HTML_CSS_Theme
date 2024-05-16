@@ -1,4 +1,3 @@
-/* Resetting default margin and padding */
 * {
     margin: 0;
     padding: 0;
@@ -194,6 +193,7 @@ header {
     border-radius: 60px;
     color: #000;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .slide2 {
@@ -238,6 +238,7 @@ header {
     border-radius: 60px;
     color: #fff;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .slide3 {
@@ -251,6 +252,7 @@ header {
     position: absolute;
     transition: opacity 0.5s ease;
     justify-content: flex-start;
+
 }
 
 .slide3 .content {
@@ -260,6 +262,7 @@ header {
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+
 }
 
 .slide3 .content h1 {
@@ -285,6 +288,8 @@ header {
     border-radius: 60px;
     color: #fff;
     font-weight: 700;
+    cursor: pointer;
+
 }
 
 .content {
@@ -742,6 +747,15 @@ footer p {
     line-height: 24px;
 }
 
+
+.menu-bar {
+    display: none;
+}
+
+.menuSideSec {
+    display: none;
+}
+
 /* Adjust responsive behaviors as needed */
 @media (max-width: 981px) {
 
@@ -756,6 +770,62 @@ footer p {
 
 
 @media (max-width: 768px) {
+
+    .menu {
+        display: none;
+    }
+
+    .user-info p {
+        display: none;
+    }
+
+    .menuSideSec {
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+        overflow-x: hidden;
+        padding-top: 60px;
+        display: block;
+    }
+
+    .menuSideSec a {
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 22px;
+        color: #000;
+        display: block;
+        transition: 0.3s;
+        text-transform: uppercase;
+    }
+
+    .menuSideSec a:hover {
+        color: #929191;
+    }
+
+    .menuSideSec .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+    }
+
+    .menu-bar {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: transparent;
+        color: #000;
+        padding: 10px 15px;
+        border: none;
+        display: block;
+    }
+
+    .menu-bar:hover {
+        background-color: #444;
+    }
 
     .product-title-sec-outer {
         flex-direction: column;

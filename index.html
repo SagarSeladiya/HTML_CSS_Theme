@@ -4,13 +4,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Shopify Practical</title>
+        <link rel="stylesheet" href="css/swiper-bundle.min.css" />
         <link rel="stylesheet" href="/css/style.css">
         <link rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link
+            href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+            rel="stylesheet" />
     </head>
     <body>
         <header>
+
             <div class="menu-outer">
+                <!-- Mobile Menu Bar Button -->
                 <button class="menu-bar" onclick="menuBar()"><i
                         class="fa fa-bars"></i> </button>
                 <div>
@@ -23,6 +29,7 @@
                     <li><a href="#">Our story</a></li>
                 </ul>
 
+                <!-- Mobile Menus -->
                 <div id="menuSideBar" class="menuSideSec">
                     <a href="javascript:void(0)" class="closebtn"
                         onclick="menuBarClose()">×</a>
@@ -44,6 +51,20 @@
         </header>
 
         <main>
+            <!-- /* Mobile Slider Section*/ -->
+            <div class="mb-slider-sec-outer">
+                <img src="/images/slide1.png"
+                    alt="dogs">
+                <div class="mobile-slider-sec">
+                    <div class="content">
+                        <h1>Happy Makes Happy</h1>
+                        <p>Multivitamin pet beverage with 100% essential
+                            nutrition. 0% left at the bottom of the bowl.</p>
+                        <button>Shop VK9</button>
+                    </div>
+                </div>
+            </div>
+            <!-- SLider Section -->
             <div class="slider">
                 <div class="slide slide1">
                     <div class="content">
@@ -71,6 +92,70 @@
                 </div>
             </div>
 
+            <!-- Mobile Bottel Section -->
+            <div class="mb-bottel-sec-outer">
+                <h3>...in every bottle</h3>
+                <img src="/images/bottle.png" alt="Your Image">
+
+                <section class="mb-bottel-container">
+                    <div class="testimonial mySwiper">
+                        <div class="testi-content swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="/images/icon-5.png"
+                                            alt="Healthier skin">
+                                    </div>
+                                    <div class="text">
+                                        <h2>Healthier skin</h2>
+                                        <p>Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="/images/icon-4.png"
+                                            alt="Healthier skin">
+                                    </div>
+                                    <div class="text">
+                                        <h2>Antioxidants</h2>
+                                        <p>Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="/images/icon-3.png"
+                                            alt="Healthier skin">
+                                    </div>
+                                    <div class="text">
+                                        <h2>Better metabolic function</h2>
+                                        <p>Lorem ipsum dolor sit amet,
+                                            consectetur
+                                            adipiscing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-pagination"></div>
+                    </div>
+
+                </section>
+                <div class="mb-button-outer">
+                    <button>Shop VK</button>
+                </div>
+
+            </div>
+
+            <!-- Bottel Sec -->
             <div class="bottel-sec-outer">
                 <div class="container column-main-outer">
                     <div class="column">
@@ -325,16 +410,6 @@
                 </div>
             </div>
 
-            <script src="/js/slider-script.js"></script>
-            <script>
-                function menuBar() {
-                document.getElementById("menuSideBar").style.width = "250px";
-                }
-
-                function menuBarClose() {
-                document.getElementById("menuSideBar").style.width = "0";
-                }
-            </script>
         </main>
 
         <footer>
@@ -403,5 +478,96 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Mobile Screen Footer -->
+        <div class="mb-footer">
+            <div class="footer-container">
+                <img src="/images/logo.png"
+                    alt="footer-logo" class="footer-logo">
+                <div class="footer-column">
+
+                    <h3 class="accordion-title">SHOP VK9 <img
+                            src="/images/arrow.png" alt="arrow"
+                            class="arrow-icon">
+                    </h3>
+
+                    <ul class="accordion-content">
+                        <li><a href="#">12 month plan</a></li>
+                        <li><a href="#">One-time order</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="accordion-title">LEARN <img
+                            src="/images/arrow.png" alt="arrow"
+                            class="arrow-icon"></h3>
+                    <ul class="accordion-content">
+                        <li><a href="#">Nutrition + benefits</a></li>
+                        <li><a href="#">How it works</a></li>
+                        <li><a href="#">How to serve</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="accordion-title">OUR STORY <img
+                            src="/images/arrow.png" alt="arrow"
+                            class="arrow-icon"></h3>
+                    <ul class="accordion-content">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Our experts</a></li>
+                        <li><a href="#">A better future</a></li>
+                        <li><a href="#">Thrive together</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="accordion-title">CONTACT <img
+                            src="/images/arrow.png" alt="arrow"
+                            class="arrow-icon"></h3>
+                    <ul class="accordion-content">
+                        <li><a href="mailto:help@vk9.com">help@vk9.com</a></li>
+                        <li><a href="tel:+18005555555">800-555-5555</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <div class="email-subscribe-outer">
+                    <p>Join our newsletter</p>
+                    <div class="email-input-outer">
+                        <input type="email" placeholder="Enter your email">
+                        <button>→</button>
+                    </div>
+
+                </div>
+                <ul class="social-media">
+                    <li><a href="#"><img src="/images/instagram.png"
+                                alt="Instagram"></a></li>
+                    <li><a href="#"><img src="/images/facebook.png"
+                                alt="Facebook"></a></li>
+                    <li><a href="#"><img src="/images/twitter.png"
+                                alt="Twitter"></a></li>
+                    <li><a href="#"><img src="/images/pininterest.png"
+                                alt="Pinterest"></a></li>
+                </ul>
+                <div class="copyright">
+                    <h3>Happy Makes Happy</h3>
+                    <p>Privacy | Terms & conditions | © 2022 VK9</p>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="/js/slider-script.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script src="js/swipper-script.js"></script>
+        <script>
+                function menuBar() {
+                document.getElementById("menuSideBar").style.width = "250px";
+                }
+
+                function menuBarClose() {
+                document.getElementById("menuSideBar").style.width = "0";
+                }
+            </script>
     </body>
 </html>

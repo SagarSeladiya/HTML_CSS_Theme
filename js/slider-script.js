@@ -20,5 +20,19 @@ document.addEventListener("DOMContentLoaded", function () {
     showSlide(index);
   }
 
-  setInterval(nextSlide, 2000);
+  setInterval(nextSlide, 3000);
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const titles = document.querySelectorAll(".accordion-title");
+
+  titles.forEach((title) => {
+    title.addEventListener("click", function () {
+      const content = this.nextElementSibling;
+      const arrow = this.querySelector(".arrow-icon");
+
+      content.classList.toggle("active");
+      arrow.classList.toggle("rotate");
+    });
+  });
 });

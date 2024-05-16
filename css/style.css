@@ -154,6 +154,7 @@ header {
     /* Adjust as needed */
     overflow: hidden;
     position: relative;
+    display: block;
 }
 
 .content button:hover {
@@ -324,6 +325,7 @@ header {
     justify-content: space-between;
     background-color: #EA3F37;
     padding: 80px 100px 0 100px;
+    display: block;
 }
 
 
@@ -756,13 +758,49 @@ footer p {
     display: none;
 }
 
+.mb-slider-sec-outer {
+    display: none;
+}
+
+.mb-bottel-sec-outer {
+    display: none;
+}
+
+.mb-footer {
+    display: none;
+}
+
 /* Adjust responsive behaviors as needed */
 @media (max-width: 981px) {
 
+    .bottel-sec-outer {
+        display: none;
+    }
 
     .plans {
         flex-direction: column;
         align-items: center;
+    }
+
+    .product-title-sec-outer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .product-title-text {
+        width: 100%;
+    }
+
+    .product-title-text h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .product-desc-text p {
+        width: 100%;
+        text-align: center;
+
     }
 
 
@@ -770,6 +808,7 @@ footer p {
 
 
 @media (max-width: 768px) {
+
 
     .menu {
         display: none;
@@ -827,10 +866,47 @@ footer p {
         background-color: #444;
     }
 
+    .slider {
+        display: none;
+    }
+
+    .mb-slider-sec-outer {
+        display: block;
+    }
+
+    .mb-slider-sec-outer img {
+        height: 200px;
+    }
+
+    .mobile-slider-sec {
+        background-color: #FBECDD;
+        padding: 15px;
+        margin: 0;
+    }
+
+    .mobile-slider-sec .content h1 {
+        color: #000;
+        font-size: 48px;
+        line-height: 50px;
+        font-weight: 700;
+    }
+
+    .mobile-slider-sec .content p {
+        color: #000;
+    }
+
+    .mobile-slider-sec .content button {
+        background-color: #EA3F37;
+        color: #000;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 700;
+        border-radius: 25px;
+    }
+
     .product-title-sec-outer {
         flex-direction: column;
         width: 100%;
-        ;
     }
 
     .product-title-text {
@@ -849,9 +925,170 @@ footer p {
 
     }
 
+    .mb-bottel-sec-outer {
+        display: block;
+        background-color: #EA3F37;
+        padding: 20px
+    }
+
+    .mb-bottel-sec-outer h3 {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .mb-bottel-sec-outer img {
+        width: 134px;
+        height: 382px;
+        margin: 20px auto;
+        text-align: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .mb-bottel-container {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mb-bottel-sec-outer .mb-button-outer {
+        width: 100%;
+    }
+
+    .mb-bottel-sec-outer button {
+        background-color: #FBECDD;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 700;
+        justify-content: center;
+        display: flex;
+        width: 280px;
+        margin: 0 auto;
+        text-align: center;
+        color: #000;
+        border-radius: 25px;
+        margin-top: 10px;
+    }
+
+    .testimonial {
+        position: relative;
+        width: 100%;
+        padding: 0;
+        overflow: hidden;
+    }
+
+
+    .testimonial .slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 30px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .swiper-slide .card .image {
+        width: 25%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    .swiper-slide .card .image img {
+        margin: 0;
+    }
+
+    .swiper-slide .card .text {
+        width: 75%;
+    }
+
+    .swiper-slide .card .text p {
+        width: 100%;
+    }
+
+    .swiper-slide img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .slide p {
+        text-align: center;
+        padding: 0 160px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #333;
+    }
+
+    .slide .quote-icon {
+        font-size: 30px;
+        color: #4070f4;
+    }
+
+    .slide .details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details .name {
+        font-size: 14px;
+        font-weight: 600;
+        color: #333;
+    }
+
+    .details .job {
+        font-size: 12px;
+        font-weight: 400;
+        color: #333;
+    }
+
+
+    .nav-btn {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        transform: translateY(30px);
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: 0.2s;
+    }
+
+    .nav-btn:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-btn::after,
+    .nav-btn::before {
+        font-size: 20px;
+        color: #fff;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: #4070f4;
+    }
+
     .plans {
         flex-direction: column;
         align-items: center;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .mb-footer {
+        background-color: #ea3f37 !important;
+        color: white;
+        padding: 20px 0;
+        margin-top: 25px;
+        display: block;
     }
 
     .footer-container {
@@ -861,10 +1098,24 @@ footer p {
 
     .footer-column {
         margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .footer-column h3 {
+        justify-content: space-between;
+        display: flex;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: 'Roobert-Regular' !important;
+    }
+
+    .footer-column h3 img {
+        width: 18px;
     }
 
     .footer-bottom {
         flex-direction: column;
+        align-items: flex-start;
     }
 
     .footer-bottom input,
@@ -874,5 +1125,35 @@ footer p {
 
     .social-media {
         justify-content: center;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .social-media li {
+        list-style: none;
+    }
+
+    .accordion-title {
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .accordion-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+
+    .accordion-content.active {
+        max-height: 500px;
+    }
+
+    .arrow-icon {
+        transition: transform 0.3s ease-out;
+        transform: rotate(180deg);
+    }
+
+    .arrow-icon.rotate {
+        transform: rotate(0deg);
     }
 }
